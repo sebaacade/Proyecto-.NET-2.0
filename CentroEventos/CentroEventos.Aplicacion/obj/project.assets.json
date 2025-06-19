@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Chorizard\\.nuget\\packages\\": {}
+    "C:\\Users\\matia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chorizard\\Desktop\\Proyecto-.NET-2.0-master\\CentroEventos\\CentroEventos.Aplicacion\\CentroEventos.Aplicacion.csproj",
+      "projectUniqueName": "C:\\Users\\matia\\OneDrive\\Escritorio\\.NET\\Proyecto-.NET-2.0\\CentroEventos\\CentroEventos.Aplicacion\\CentroEventos.Aplicacion.csproj",
       "projectName": "CentroEventos.Aplicacion",
-      "projectPath": "C:\\Users\\Chorizard\\Desktop\\Proyecto-.NET-2.0-master\\CentroEventos\\CentroEventos.Aplicacion\\CentroEventos.Aplicacion.csproj",
-      "packagesPath": "C:\\Users\\Chorizard\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chorizard\\Desktop\\Proyecto-.NET-2.0-master\\CentroEventos\\CentroEventos.Aplicacion\\obj\\",
+      "projectPath": "C:\\Users\\matia\\OneDrive\\Escritorio\\.NET\\Proyecto-.NET-2.0\\CentroEventos\\CentroEventos.Aplicacion\\CentroEventos.Aplicacion.csproj",
+      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matia\\OneDrive\\Escritorio\\.NET\\Proyecto-.NET-2.0\\CentroEventos\\CentroEventos.Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Chorizard\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,4 +1,7 @@
 ﻿@page "/registro"
+@rendermode InteractiveServer
+@inject NavigationManager Navegador
+@inject AgregarUsuarioUseCase AgregarUsuarioUseCase
 
 <PageTitle>Registro</PageTitle>
 
@@ -6,17 +9,43 @@
     <div class="cuadro">
         <h2>Registrarse</h2>
 
-        <form>
-            <input type="text" placeholder="Nombre completo" required />
-            <br />
-            <input type="text" placeholder="Apellido completo" required />
-            <br />
-            <input type="email" placeholder="Correo electrónico" required />
-            <br />
-            <input type="password" placeholder="Contraseña" required />
-            <br />
-            <br />
-            <button type="submit">Crear cuenta</button>
-        </form>
+        @if (!string.IsNullOrEmpty (Error)){
+            <div class=" alert alert -danger">@Error</div>
+        }
+
+
+        <EditForm Model="@_usuario" OnValidSubmit="CrearCuenta">
+
+    <input class="form-control mb-2"placeholder="Nombre completo"@bind="_usuario.Nombre" />
+
+    <input class="form-control mb-2"placeholder="Apellido completo" @bind="_usuario.Apellido" />
+
+    <input class="form-control mb-2"placeholder="Correo electrónico"@bind="_usuario.Email" />
+
+    <input type="password"class="form-control mb-2"placeholder="Contraseña"@bind="_usuario.Contraseña" />
+
+    <button class="btn btn-primary" type="submit">Crear Cuenta</button>
+    </EditForm> 
     </div>
 </div>
+
+
+@code{
+    Usuario _usuario = new Usuario ();
+    private string? Error;
+    void CrearCuenta()
+    {
+        try{
+        AgregarUsuarioUseCase.Ejecutar(_usuario);
+        Navegador.NavigateTo("/");
+        }
+        catch (ValidacionException e){
+           Error = e.Message; 
+        }
+
+    }
+}
+
+
+
+

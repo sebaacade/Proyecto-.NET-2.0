@@ -40,6 +40,13 @@ builder.Services.AddTransient<ListarEventoDeportivoUseCase>();
 builder.Services.AddTransient<EliminarUsuarioUseCase>();
 builder.Services.AddTransient<ActualizarUsuarioUseCase>();
 
+builder.Services.AddScoped<LoginUseCase>();
+
+//usuario
+builder.Services.AddScoped<AgregarUsuarioUseCase>();
+builder.Services.AddScoped<ActualizarUsuarioUseCase>();
+
+
 
 var app = builder.Build();
 

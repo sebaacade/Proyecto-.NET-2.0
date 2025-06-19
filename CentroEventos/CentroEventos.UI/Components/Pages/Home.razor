@@ -1,4 +1,6 @@
 ﻿@page "/"
+@rendermode InteractiveServer
+@inject LoginUseCase LoginUseCase
 
 <PageTitle>Inicio</PageTitle>
 
@@ -6,14 +8,47 @@
     <div class="cuadro">
         <h2>Iniciar Sesión</h2>
 
-        <form>
-            <input type="email" placeholder="Correo electrónico" required />
+        @if (!string.IsNullOrEmpty(Error))
+        {
+            <div class="alert alert-danger">@Error</div>
+        }
+
+
+            <input type="email" placeholder="Correo electrónico"@bind= "Email" class="form-control"/>
             <br />
-            <input type="password" placeholder="Contraseña" required />
+            <input type="password" placeholder="Contraseña" @bind="Password" class="form-control" />
             <br />
-            <button type="submit">Ingresar</button>
+            <button class= "btn btn-primary" @onclick ="Ingresar" >Ingresar</button>
             <br />
             <NavLink class="r" href="/registro">Registrarse</NavLink>
-        </form>
+
     </div>
 </div>
+
+@code {
+     public string Email{get; set;} = "";
+     public string Password {get; set;} = "";
+     private string Error= "";
+        void Ingresar(){
+            
+            try {
+ 
+                var usuario = LoginUseCase.Ejecutar (Email,Password); 
+                Error = null; 
+
+            }
+
+            catch (LoginException e){
+
+                Error = e.Message;
+
+            }
+
+            catch (Exception){
+                Error = "Se produjo un error inesperado";
+            }
+
+            StateHasChanged();
+        }
+
+}
