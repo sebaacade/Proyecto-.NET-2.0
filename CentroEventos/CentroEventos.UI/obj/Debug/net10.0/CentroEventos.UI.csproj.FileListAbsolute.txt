@@ -1,0 +1,7 @@
+C:\Users\USUARIO\Documents\Facultad\Segundo Año\Seminario de Lenguajes - .NET\Proyecto-.NET-2.0\CentroEventos\CentroEventos.UI\obj\Debug\net10.0\CentroEventos.UI.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Documents\Facultad\Segundo Año\Seminario de Lenguajes - .NET\Proyecto-.NET-2.0\CentroEventos\CentroEventos.UI\obj\Debug\net10.0\CentroEventos.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Documents\Facultad\Segundo Año\Seminario de Lenguajes - .NET\Proyecto-.NET-2.0\CentroEventos\CentroEventos.UI\obj\Debug\net10.0\CentroEventos.UI.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\Facultad\Segundo Año\Seminario de Lenguajes - .NET\Proyecto-.NET-2.0\CentroEventos\CentroEventos.UI\obj\Debug\net10.0\CentroEventos.UI.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\Facultad\Segundo Año\Seminario de Lenguajes - .NET\Proyecto-.NET-2.0\CentroEventos\CentroEventos.UI\obj\Debug\net10.0\CentroEventos.UI.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\Facultad\Segundo Año\Seminario de Lenguajes - .NET\Proyecto-.NET-2.0\CentroEventos\CentroEventos.UI\obj\Debug\net10.0\CentroEventos.UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USUARIO\Documents\Facultad\Segundo Año\Seminario de Lenguajes - .NET\Proyecto-.NET-2.0\CentroEventos\CentroEventos.UI\obj\Debug\net10.0\CentroEventos.UI.sourcelink.json

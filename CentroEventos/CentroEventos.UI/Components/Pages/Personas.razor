@@ -1,0 +1,25 @@
+@page "/Personas"
+@rendermode InteractiveServer
+@inject NavigationManager Navegador;
+@inject AgregarPersonaUseCase AgregarPersonaUseCase
+
+<input placeholder="Nombre" @bind="_persona.Nombre" class="form-control">
+<input placeholder="Apellido" @bind="_persona.Apellido" class="form-control">
+<input placeholder="Email" @bind="_persona.Email" class="form-control">
+<input placeholder="Telefono" @bind="_persona.Telefono" class="form-control">
+<input placeholder="DNI" @bind="_persona.DNI" class="form-control">
+
+
+
+<button class="btn btn-primary" @onclick="Aceptar">Aceptar</button>
+
+@code {
+    Persona _persona = new Persona();
+    Usuario u = new Usuario();
+    void Aceptar()
+    {
+        AgregarPersonaUseCase.Ejecutar(u,_persona);
+        _persona = new Persona();
+        Navegador.NavigateTo("listadocpersonas");
+    }
+}
